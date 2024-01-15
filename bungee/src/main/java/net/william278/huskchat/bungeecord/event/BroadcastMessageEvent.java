@@ -19,8 +19,8 @@
 
 package net.william278.huskchat.bungeecord.event;
 
-import net.william278.huskchat.event.IBroadcastMessageEvent;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.event.IBroadcastMessageEvent;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class BroadcastMessageEvent extends BungeeEvent implements IBroadcastMessageEvent {

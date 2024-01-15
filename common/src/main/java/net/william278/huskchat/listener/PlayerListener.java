@@ -21,7 +21,7 @@ package net.william278.huskchat.listener;
 
 import net.william278.huskchat.HuskChat;
 import net.william278.huskchat.channel.Channel;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;

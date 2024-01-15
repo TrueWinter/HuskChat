@@ -20,7 +20,7 @@
 package net.william278.huskchat.command;
 
 import net.william278.huskchat.HuskChat;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.PlayerCache;
 import org.jetbrains.annotations.NotNull;
 

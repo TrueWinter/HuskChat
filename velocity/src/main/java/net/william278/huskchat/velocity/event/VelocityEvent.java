@@ -19,9 +19,9 @@
 
 package net.william278.huskchat.velocity.event;
 
-import net.william278.huskchat.event.EventBase;
+import net.william278.huskchat.api.event.EventBase;
 
-public class VelocityEvent implements EventBase {
+public abstract class VelocityEvent implements EventBase {
     private boolean cancelled = false;
 
     @Override

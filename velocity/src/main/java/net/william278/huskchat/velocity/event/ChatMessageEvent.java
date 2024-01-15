@@ -19,8 +19,8 @@
 
 package net.william278.huskchat.velocity.event;
 
-import net.william278.huskchat.event.IChatMessageEvent;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.event.IChatMessageEvent;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class ChatMessageEvent extends VelocityEvent implements IChatMessageEvent {

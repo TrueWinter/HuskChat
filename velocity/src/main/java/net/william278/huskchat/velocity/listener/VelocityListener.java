@@ -28,7 +28,7 @@ import com.velocitypowered.api.event.player.ServerConnectedEvent;
 import net.william278.huskchat.HuskChat;
 import net.william278.huskchat.listener.PlayerListener;
 import net.william278.huskchat.message.ChatMessage;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.velocity.player.VelocityPlayer;
 import org.jetbrains.annotations.NotNull;
 

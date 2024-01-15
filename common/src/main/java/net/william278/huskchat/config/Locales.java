@@ -27,7 +27,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.TextColor;
 import net.william278.huskchat.HuskChat;
 import net.william278.huskchat.channel.Channel;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.PlayerCache;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

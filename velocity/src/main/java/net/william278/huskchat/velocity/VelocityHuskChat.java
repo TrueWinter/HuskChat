@@ -39,7 +39,7 @@ import net.william278.huskchat.getter.LuckPermsDataGetter;
 import net.william278.huskchat.placeholders.DefaultReplacer;
 import net.william278.huskchat.placeholders.PAPIProxyBridgeReplacer;
 import net.william278.huskchat.placeholders.PlaceholderReplacer;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.PlayerCache;
 import net.william278.huskchat.velocity.command.VelocityCommand;
 import net.william278.huskchat.velocity.event.VelocityEventDispatcher;
@@ -95,6 +95,8 @@ public class VelocityHuskChat implements HuskChat {
         this.dataDirectory = dataDirectory;
         this.metrics = metrics;
         this.container = pluginContainer;
+
+        net.william278.huskchat.api.HuskChat.setAPI(new VelocityAPI(this));
     }
 
     @Subscribe

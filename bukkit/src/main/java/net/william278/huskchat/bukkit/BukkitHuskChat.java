@@ -32,13 +32,13 @@ import net.william278.huskchat.command.ShortcutCommand;
 import net.william278.huskchat.config.Locales;
 import net.william278.huskchat.config.Settings;
 import net.william278.huskchat.discord.DiscordHook;
-import net.william278.huskchat.event.EventDispatcher;
+import net.william278.huskchat.api.event.EventDispatcher;
 import net.william278.huskchat.getter.DataGetter;
 import net.william278.huskchat.getter.DefaultDataGetter;
 import net.william278.huskchat.getter.LuckPermsDataGetter;
 import net.william278.huskchat.placeholders.DefaultReplacer;
 import net.william278.huskchat.placeholders.PlaceholderReplacer;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.PlayerCache;
 import org.bukkit.command.CommandMap;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -72,6 +72,8 @@ public class BukkitHuskChat extends JavaPlugin implements HuskChat {
     public void onLoad() {
         // Set instance for easy cross-class referencing
         instance = this;
+
+        net.william278.huskchat.api.HuskChat.setAPI(new BukkitAPI(this));
     }
 
     @Override

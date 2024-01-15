@@ -21,7 +21,7 @@ package net.william278.huskchat.velocity.player;
 
 import com.velocitypowered.api.proxy.ServerConnection;
 import net.kyori.adventure.audience.Audience;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.velocity.VelocityHuskChat;
 import org.jetbrains.annotations.NotNull;
 

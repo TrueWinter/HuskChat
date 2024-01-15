@@ -19,7 +19,7 @@
 
 package net.william278.huskchat.filter;
 
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.profanitycheckerapi.ProfanityChecker;
 import net.william278.profanitycheckerapi.ProfanityCheckerBuilder;
 import org.jetbrains.annotations.NotNull;

@@ -22,6 +22,7 @@ package net.william278.huskchat.player;
 import dev.dejvokep.boostedyaml.YamlDocument;
 import dev.dejvokep.boostedyaml.block.implementation.Section;
 import net.william278.huskchat.HuskChat;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.channel.Channel;
 import org.jetbrains.annotations.NotNull;
 

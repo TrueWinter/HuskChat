@@ -21,6 +21,7 @@ package net.william278.huskchat.player;
 
 import net.kyori.adventure.audience.Audience;
 import net.william278.huskchat.HuskChat;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;

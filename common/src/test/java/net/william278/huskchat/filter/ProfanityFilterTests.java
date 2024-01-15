@@ -19,7 +19,7 @@
 
 package net.william278.huskchat.filter;
 
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.TestPlayer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

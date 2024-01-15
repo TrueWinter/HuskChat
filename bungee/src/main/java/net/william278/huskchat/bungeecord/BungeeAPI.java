@@ -17,23 +17,26 @@
  *  limitations under the License.
  */
 
-package net.william278.huskchat.event;
+package net.william278.huskchat.bungeecord;
 
-import net.william278.huskchat.player.Player;
+import net.md_5.bungee.api.connection.ProxiedPlayer;
+import net.william278.huskchat.API;
+import net.william278.huskchat.HuskChat;
+import net.william278.huskchat.api.player.Player;
+import net.william278.huskchat.bungeecord.player.BungeePlayer;
 import org.jetbrains.annotations.NotNull;
 
-public interface IChatMessageEvent extends EventBase {
+public class BungeeAPI extends API {
+    public BungeeAPI(HuskChat huskChat) {
+        super(huskChat);
+    }
 
-    @NotNull
-    Player getSender();
-    @NotNull
-    String getMessage();
-    @NotNull
-    String getChannelId();
+    @Override
+    public Player adaptPlayer(@NotNull Object player) throws IllegalArgumentException {
+        if (!(player instanceof ProxiedPlayer)) {
+            throw new IllegalArgumentException("Player must be a Bungee ProxiedPlayer");
+        }
 
-    void setSender(@NotNull Player sender);
-    void setMessage(@NotNull String message);
-    @SuppressWarnings("unused")
-    void setChannelId(@NotNull String channelId);
-
+        return BungeePlayer.adapt((ProxiedPlayer) player);
+    }
 }

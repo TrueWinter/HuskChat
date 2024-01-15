@@ -19,7 +19,7 @@
 
 package net.william278.huskchat.bukkit.event;
 
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.jetbrains.annotations.NotNull;
@@ -27,7 +27,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class BukkitEvent extends Event implements Cancellable {
 
     private boolean cancelled;
-    protected net.william278.huskchat.player.Player player;
+    protected Player player;
 
     protected BukkitEvent(@NotNull Player player) {
         this.player = player;

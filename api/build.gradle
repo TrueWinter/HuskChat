@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.jetbrains:annotations:24.1.0'
+
+    api 'net.kyori:adventure-api:4.14.0'
+    api 'de.themoep:minedown-adventure:1.7.2-SNAPSHOT'
+}

@@ -17,12 +17,17 @@
  *  limitations under the License.
  */
 
-package net.william278.huskchat.event;
+package net.william278.huskchat.api.event;
 
-public interface EventBase {
+import org.jetbrains.annotations.NotNull;
 
-    @SuppressWarnings("unused")
-    void setCancelled(boolean cancelled);
-    boolean isCancelled();
+/**
+ * This event is dispatched when a message is sent in chat
+ */
+@SuppressWarnings("unused")
+public interface IChatMessageEvent extends EventBase {
+    @NotNull
+    String getChannelId();
 
+    void setChannelId(@NotNull String channelId);
 }

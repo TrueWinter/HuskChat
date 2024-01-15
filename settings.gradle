@@ -11,3 +11,5 @@ include 'bungee'
 include 'velocity'
 include 'bukkit'
 include 'plugin'
+include 'api'
+

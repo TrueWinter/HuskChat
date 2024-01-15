@@ -23,7 +23,7 @@ import net.alpenblock.bungeeperms.BungeePerms;
 import net.alpenblock.bungeeperms.PermissionsManager;
 import net.alpenblock.bungeeperms.User;
 import net.william278.huskchat.getter.DataGetter;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;

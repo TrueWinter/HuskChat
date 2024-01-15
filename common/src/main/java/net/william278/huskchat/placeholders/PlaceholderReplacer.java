@@ -19,7 +19,7 @@
 
 package net.william278.huskchat.placeholders;
 
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;

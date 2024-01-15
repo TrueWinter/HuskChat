@@ -17,7 +17,7 @@
  *  limitations under the License.
  */
 
-package net.william278.huskchat.player;
+package net.william278.huskchat.api.player;
 
 import de.themoep.minedown.adventure.MineDown;
 import net.kyori.adventure.audience.Audience;

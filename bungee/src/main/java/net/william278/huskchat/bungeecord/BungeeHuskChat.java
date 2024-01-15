@@ -41,7 +41,7 @@ import net.william278.huskchat.getter.LuckPermsDataGetter;
 import net.william278.huskchat.placeholders.DefaultReplacer;
 import net.william278.huskchat.placeholders.PAPIProxyBridgeReplacer;
 import net.william278.huskchat.placeholders.PlaceholderReplacer;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.PlayerCache;
 import org.bstats.bungeecord.Metrics;
 import org.jetbrains.annotations.NotNull;
@@ -80,6 +80,8 @@ public final class BungeeHuskChat extends Plugin implements HuskChat {
         // Create the event dispatcher, register audiences
         eventDispatcher = new BungeeEventDispatcher(getProxy());
         audiences = BungeeAudiences.create(this);
+
+        net.william278.huskchat.api.HuskChat.setAPI(new BungeeAPI(this));
     }
 
     @Override

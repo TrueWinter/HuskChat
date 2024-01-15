@@ -32,7 +32,7 @@ import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.william278.huskchat.HuskChat;
 import net.william278.huskchat.message.ChatMessage;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 import org.spicord.Spicord;
 import org.spicord.api.addon.SimpleAddon;

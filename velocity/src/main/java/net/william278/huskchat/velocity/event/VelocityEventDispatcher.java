@@ -20,11 +20,11 @@
 package net.william278.huskchat.velocity.event;
 
 import com.velocitypowered.api.proxy.ProxyServer;
-import net.william278.huskchat.event.EventDispatcher;
-import net.william278.huskchat.event.IBroadcastMessageEvent;
-import net.william278.huskchat.event.IChatMessageEvent;
-import net.william278.huskchat.event.IPrivateMessageEvent;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.event.EventDispatcher;
+import net.william278.huskchat.api.event.IBroadcastMessageEvent;
+import net.william278.huskchat.api.event.IChatMessageEvent;
+import net.william278.huskchat.api.event.IPrivateMessageEvent;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

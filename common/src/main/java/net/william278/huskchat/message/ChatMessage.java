@@ -23,7 +23,7 @@ import net.william278.huskchat.HuskChat;
 import net.william278.huskchat.channel.Channel;
 import net.william278.huskchat.filter.ChatFilter;
 import net.william278.huskchat.player.ConsolePlayer;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.PlayerCache;
 import net.william278.huskchat.replacer.ReplacerFilter;
 import org.jetbrains.annotations.NotNull;

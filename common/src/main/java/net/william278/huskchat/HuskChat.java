@@ -33,10 +33,10 @@ import net.william278.huskchat.config.Settings;
 import net.william278.huskchat.discord.DiscordHook;
 import net.william278.huskchat.discord.SpicordHook;
 import net.william278.huskchat.discord.WebHook;
-import net.william278.huskchat.event.EventDispatcher;
+import net.william278.huskchat.api.event.EventDispatcher;
 import net.william278.huskchat.getter.DataGetter;
 import net.william278.huskchat.placeholders.PlaceholderReplacer;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import net.william278.huskchat.player.PlayerCache;
 import org.jetbrains.annotations.NotNull;
 

@@ -19,8 +19,8 @@
 
 package net.william278.huskchat.bungeecord.event;
 
-import net.william278.huskchat.event.IPrivateMessageEvent;
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.event.IPrivateMessageEvent;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

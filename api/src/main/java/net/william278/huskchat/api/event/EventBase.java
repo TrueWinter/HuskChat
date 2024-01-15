@@ -17,20 +17,22 @@
  *  limitations under the License.
  */
 
-package net.william278.huskchat.event;
+package net.william278.huskchat.api.event;
 
-import net.william278.huskchat.player.Player;
+import net.william278.huskchat.api.player.Player;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
+@SuppressWarnings("unused")
+public interface EventBase {
+    @NotNull
+    Player getSender();
 
-public interface EventDispatcher {
+    @NotNull
+    String getMessage();
 
-    CompletableFuture<IChatMessageEvent> dispatchChatMessageEvent(@NotNull Player player, @NotNull String message, @NotNull String channelId);
+    void setSender(@NotNull Player sender);
+    void setMessage(@NotNull String message);
 
-    CompletableFuture<IPrivateMessageEvent> dispatchPrivateMessageEvent(@NotNull Player sender, @NotNull List<Player> receivers, @NotNull String message);
-
-    CompletableFuture<IBroadcastMessageEvent> dispatchBroadcastMessageEvent(@NotNull Player sender, @NotNull String message);
-
+    void setCancelled(boolean cancelled);
+    boolean isCancelled();
 }
